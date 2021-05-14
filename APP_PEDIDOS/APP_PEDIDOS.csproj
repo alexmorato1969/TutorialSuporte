@@ -70,6 +70,7 @@
       <DependentUpon>FrmCidades.cs</DependentUpon>
     </Compile>
     <Compile Include="pedidosClasses\cidadeClass.cs" />
+    <Compile Include="pedidosClasses\Tools.cs" />
     <Compile Include="pedidosClasses\ufClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

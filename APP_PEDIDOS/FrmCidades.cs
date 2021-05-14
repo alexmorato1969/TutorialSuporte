@@ -13,6 +13,7 @@ namespace APP_PEDIDOS
     public partial class FrmCidades : Form
     {
         pedidosClasses.cidadeClass d = new pedidosClasses.cidadeClass();
+        
         public FrmCidades()
         {
             InitializeComponent();
@@ -61,6 +62,19 @@ namespace APP_PEDIDOS
         private void button1_Click(object sender, EventArgs e)
         {
             carregaCboCidade();
+        }
+
+        private void btn_Limpar_Click(object sender, EventArgs e)
+        {
+            pedidosClasses.Tools.LimpaControlesGenerico(this);
+        }
+
+        private void dgv_Cidades_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            int linhaAtual = e.RowIndex;
+            txt_CodCidade.Text = dgv_Cidades.Rows[linhaAtual].Cells[0].Value.ToString();
+            txt_NomeCidade.Text = dgv_Cidades.Rows[linhaAtual].Cells[1].Value.ToString();
+            cboEstados.Text = dgv_Cidades.Rows[linhaAtual].Cells[2].Value.ToString();
         }
     }
 }

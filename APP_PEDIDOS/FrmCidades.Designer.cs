@@ -80,6 +80,7 @@ namespace APP_PEDIDOS
             this.btn_Limpar.TabIndex = 3;
             this.btn_Limpar.Text = "Limpar";
             this.btn_Limpar.UseVisualStyleBackColor = true;
+            this.btn_Limpar.Click += new System.EventHandler(this.btn_Limpar_Click);
             // 
             // label1
             // 
@@ -140,6 +141,7 @@ namespace APP_PEDIDOS
             this.dgv_Cidades.RowTemplate.Height = 24;
             this.dgv_Cidades.Size = new System.Drawing.Size(792, 277);
             this.dgv_Cidades.TabIndex = 10;
+            this.dgv_Cidades.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgv_Cidades_RowHeaderMouseClick);
             // 
             // button1
             // 
